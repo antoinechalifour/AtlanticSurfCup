@@ -1,0 +1,77 @@
+@color-inverse: #090d18; 
+@color-primary: #3F51B5;
+@color-dark-primary: #303F9F;
+@color-accent: #03A9F4;
+
+@color-navbar: #ffffff;
+@color-default-text: #333333;
+@color-default-text-inverse: white;
+@color-body: #ffffff;
+@color-navbar-bg-tr: rgba(0, 0, 0, 0.10);
+@color-navbar-bg: @color-dark-primary;
+
+@dimens-section-default: 40px;
+@dimens-section-sides: 10px;
+
+
+@import (less) 'about/about.less';
+@import (less) 'contact/contact.less';
+@import (less) 'core/core.less';
+@import (less) 'home/home.less';
+@import (less) 'sponsors/sponsors.less';
+
+/*
+Eléments généraux
+ */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.50;
+  color: @color-default-text;
+  background-color: @color-body;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 20px 0;
+  font-family: 'Roboto-Light'
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+
+/*
+Helpers
+ */
+.space {
+  padding: 20px 0;
+}
+
+.text-info {
+  color: @color-accent;
+}
+
+.spacer {
+  content: '';
+  padding-bottom: 62px;
+}
+
+.shadow-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+}
+
+.shadow-2 {
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}

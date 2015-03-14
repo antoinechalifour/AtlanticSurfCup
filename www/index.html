@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="ASC">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  
+  <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet/less" type="text/css" href="app.less">
+</head>
+<body class="no-trans">
+  <asc-nav></asc-nav>
+  <asc-home></asc-home>
+  <asc-about></asc-about>
+  <asc-separator background-url="'core/img/separator.png'"></asc-separator>
+  <asc-contact></asc-contact>
+  <!-- <asc-separator background-url="'core/img/separator2.png'"></asc-separator> -->
+  <asc-sponsors></asc-sponsors>
+  <div class="spacer"></div>
+  <!-- <div class="footer-fixed">
+    <asc-footer></asc-footer>
+  </div> -->
+  
+  <script src="bower_components/jquery/jquery.min.js"></script>
+  <script src="bower_components/wow/dist/wow.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+  <script src="bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.min.js"></script>
+  <script src="bower_components/jquery-backstretch/jquery.backstretch.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/less.js/dist/less.min.js"></script>
+
+  <script src="app.js"></script>
+
+  <script src="core/core.js"></script>
+  <script src="core/ascNav/ascNav.directive.js"></script>
+  <script src="core/ascFooter/ascFooter.directive.js"></script>
+  <script src="core/ascSeparator/ascSeparator.directive.js"></script>
+  <script src="core/core.services.js"></script>
+  <script src="core/core.directives.js"></script>
+
+  <script src="home/home.js"></script>
+  <script src="home/home.directives.js"></script>
+
+  <script src="about/about.js"></script>
+  <script src="about/about.directives.js"></script>
+
+  <script src="sponsors/sponsors.js"></script>
+  <script src="sponsors/sponsors.directives.js"></script>
+
+  <script src="contact/contact.js"></script>
+  <script src="contact/contact.directives.js"></script>
+</body>
+</html>
