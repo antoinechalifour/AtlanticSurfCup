@@ -12,6 +12,8 @@
   })
 
   .controller('AscSponsorsCtrl', ['$scope', 'CoreSponsors', function($scope, CoreSponsors){
-    $scope.sponsors = CoreSponsors;
+    CoreSponsors.success(function(sponsors){
+      $scope.sponsors = sponsors;
+    });
   }]);
 })();
