@@ -10,4 +10,33 @@
       width: 100%;
     }
   }
+
+  .email {
+    &:before {
+      content: 'staff.atlanticsurfcup'; 
+    }
+    &:after {
+      content: 'gmail.com'
+    }
+  }
+
+  .social {
+    font-size: 20px;
+    a {
+      text-decoration: none;
+      color: @color-default-text;
+    }
+
+    sup {
+      i {
+        color: @color-default-text;
+        font-size: 10px;
+      }
+    }
+
+    i {
+      padding-right: 20px;
+      color: @color-dark-primary;
+    }
+  }
 }

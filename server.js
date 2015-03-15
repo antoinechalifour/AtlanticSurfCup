@@ -41,7 +41,6 @@ app.post('/api/messages', function(req, res, next){
   tos.forEach(function(to){
     var deferred = q.defer();
     promises.push(deferred.promise);
-    console.log('Envoi pour %s', to);
     transport.sendMail({
       to: to,
       from: mailConfig.auth.user,

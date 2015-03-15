@@ -18,6 +18,27 @@
   margin-top: -50px;
   width: 100%;
 }
+.contact .email:before {
+  content: 'staff.atlanticsurfcup';
+}
+.contact .email:after {
+  content: 'gmail.com';
+}
+.contact .social {
+  font-size: 20px;
+}
+.contact .social a {
+  text-decoration: none;
+  color: #333333;
+}
+.contact .social sup i {
+  color: #333333;
+  font-size: 10px;
+}
+.contact .social i {
+  padding-right: 20px;
+  color: #303f9f;
+}
 .subfooter {
   padding: 15px;
   background-color: #536DFE;

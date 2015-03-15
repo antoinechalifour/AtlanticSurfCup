@@ -8,6 +8,21 @@
           </div>
           <div class="col-xs-12 col-sm-5">
             Que ce soit pour une demande partenariat, ou simplement pour nous transmettre un message, n'hésite pas à nous contacter via le formulaire suivant.
+
+            <div class="space"></div>
+
+            <div class="social">
+              <div>
+                <i class="fa fa-envelope"></i> <span class="email">@</span>
+              </div>
+              <div>
+                <i class="fa fa-facebook-official"></i> <a target="_blank" href="https://www.facebook.com/atlantic.surfcup">Facebook</a> <sup><i class="fa fa-external-link"></i></sup>
+              </div>
+            </div>
+
+            <div class="space"></div>
+            <div class="alert alert-success" ng-show="state === 'success'">Ton message a bien été envoyé !</div>
+            <div class="alert alert-danger" ng-show="state === 'error'">Une erreur est survenue lors de l'envoi de ton message. Peux-tu reéssayer plus tard ?</div>
           </div>
           <div class="col-xs-12 col-sm-7">
             <form name="messageForm" novalidate ng-submit="sendMessage(messageInfos)">

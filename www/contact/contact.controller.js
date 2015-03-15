@@ -3,16 +3,27 @@
 
   angular.module('ASC.contact')
 
-  .controller('ContactCtrl', ['$scope', 'Messages', function($scope, Messages){
+  .controller('ContactCtrl', ['$scope', '$timeout', 'Messages', function($scope, $timeout, Messages){
     $scope.messageInfos = {};
+    $scope.state = false;
+
+    function clearState(delay){
+      $timeout(function(){
+        $scope.state = false;
+      }, delay);
+    }
+
     $scope.sendMessage = function(msgInfos){
       Messages(msgInfos)
       .success(function(data){
-        console.log(data);
+        $scope.messageInfos = {};
+        $scope.state = 'success';
+        clearState(3000);
       })
       .error(function(err){
-        console.log(err);
+        $scope.state = 'error';
+        clearState(10000);
       });
-    }
+    };
   }]);
 })();
