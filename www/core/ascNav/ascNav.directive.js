@@ -11,34 +11,29 @@
       link: function(scope, element, attrs){
         var header = element.children(0);
         var windowEl = angular.element($window);
-        var headerFixed = angular.element('.header.fixed');
+        var headerFixed = angular.element('.navbar.navbar-default');
         var body = angular.element('body');
         var limit = windowEl.height() - header.outerHeight();
         // var limit = 0;
+        
+        var handler = function(){
+          if ((headerFixed.length > 0)) { 
+            if((windowEl.scrollTop() > limit) && (windowEl.width() > 767)) {
+              body.addClass("fixed-header-on");
+            } else {
+              body.removeClass("fixed-header-on");
+            }
+          };
+        }
 
         windowEl.bind('resize', function(){
           limit = 0;
+          handler();
         });
 
-        windowEl.bind('scroll', function() {
-          if ((headerFixed.length > 0)) { 
-            if((windowEl.scrollTop() > limit) && (windowEl.width() > 767)) {
-              body.addClass("fixed-header-on");
-            } else {
-              body.removeClass("fixed-header-on");
-            }
-          };
-        });
+        windowEl.bind('scroll', handler);
 
-        windowEl.bind('load', function() {
-          if ((headerFixed.length > 0)) { 
-            if((windowEl.scrollTop() > limit) && (windowEl.width() > 767)) {
-              body.addClass("fixed-header-on");
-            } else {
-              body.removeClass("fixed-header-on");
-            }
-          };
-        });
+        windowEl.bind('load', handler);
       }
     };
   }])

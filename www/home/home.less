@@ -11,30 +11,33 @@
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 44px;
   }
 
   p {
-    font-size: 24px;
+    font-size: 18px;
   }
-}
-.banner-image {
-  vertical-align: middle;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(41, 62, 107, 0.30);
+    content: "";
+  }
+
+  .banner-image {
+    vertical-align: middle;
   min-height: 100%;
   width: 100%;
-}
-.home:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(41, 62, 107, 0.30);
-  content: "";
-}
-.banner-caption {
-  position: absolute;
-  top: 40%;
+  }
+
+  .banner-caption {
+    position: absolute;
+  top: 35%;
   width: 100%;
   z-index: 2;
+  }
 }

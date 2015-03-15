@@ -3,13 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atlantic Surf Cup</title>
   
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   
   <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-material-design/dist/css/material-wfont.min.css">
   <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css">
   <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet/less" type="text/css" href="app.less">
@@ -18,7 +21,7 @@
   <asc-nav></asc-nav>
   <asc-home></asc-home>
   <asc-about></asc-about>
-  <asc-separator background-url="'core/img/separator.png'"></asc-separator>
+  <asc-separator background-url="'core/img/separator.jpg'"></asc-separator>
   <asc-contact></asc-contact>
   <!-- <asc-separator background-url="'core/img/separator2.png'"></asc-separator> -->
   <asc-sponsors></asc-sponsors>
@@ -27,14 +30,23 @@
     <asc-footer></asc-footer>
   </div> -->
   
-  <script src="bower_components/jquery/jquery.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/wow/dist/wow.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
   <script src="bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.min.js"></script>
   <script src="bower_components/jquery-backstretch/jquery.backstretch.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+  <script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
   <script src="bower_components/less.js/dist/less.min.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      new WOW().init();
+      $.material.init();
+    });
+  </script>
 
   <script src="app.js"></script>
 

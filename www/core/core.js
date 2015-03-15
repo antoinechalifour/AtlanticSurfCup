@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('ASC.core', ['duScroll'])
+  angular.module('ASC.core', ['ui.bootstrap', 'duScroll'])
 
   .value('duScrollOffset', 150);
 })();
