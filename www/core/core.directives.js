@@ -21,7 +21,6 @@
     return {
       restrict: 'A',
       link: function (scope, element, attrs) {
-        console.log(attrs.backgroundUrl);
         $(element).backstretch(attrs.backgroundUrl);
       }
     };

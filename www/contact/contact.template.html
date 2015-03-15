@@ -10,18 +10,25 @@
             Que ce soit pour une demande partenariat, ou simplement pour nous transmettre un message, n'hésite pas à nous contacter via le formulaire suivant.
           </div>
           <div class="col-xs-12 col-sm-7">
-            <form>
+            <form name="messageForm" novalidate ng-submit="sendMessage(messageInfos)">
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Ton email...">
+                <input type="email" name="email" class="form-control" id="email" placeholder="Ton email..." ng-model="messageInfos.email" required>
+                <div ng-show="messageForm.email.$invalid && messageForm.email.$dirty">
+                  <p class="text-danger" ng-show="messageForm.email.$error.required">Ton email est requis.</p>
+                  <p class="text-danger" ng-show="messageForm.email.$error.email">Ton email est invalide.</p>
+                </div>
               </div>
 
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea rows="8" class="form-control" name="message" placeholder="Ton message..."></textarea>
+                <textarea name="message" rows="8" class="form-control" name="message" placeholder="Ton message..." ng-model="messageInfos.message" required></textarea>
+              </div>
+              <div ng-show="messageForm.message.$invalid && messageForm.message.$dirty">
+                <p class="text-danger" ng-show="messageForm.message.$error.required">Ton message est requis.</p>
               </div>
 
-              <button type="submit" class="btn btn-material-indigo">Envoyer</button>
+              <button type="submit" ng-class="{disabled: messageForm.$invalid}" class="btn btn-material-indigo">Envoyer</button>
             </form>
           </div>
         </div>

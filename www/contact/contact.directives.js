@@ -6,7 +6,8 @@
   .directive('ascContact', function(){
     return {
       restrict: 'E',
-      templateUrl: 'contact/contact.template.html'
+      templateUrl: 'contact/contact.template.html',
+      controller: 'ContactCtrl'
     };
   });
 })();

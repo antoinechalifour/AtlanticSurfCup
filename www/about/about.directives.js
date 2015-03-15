@@ -12,7 +12,6 @@
 
   .directive('ascMaps', function(){
     return function(scope, element, attrs){
-      console.log('totot');
       var mapOptions = {
         center: { lat: 46.6071, lng: -1.8548},
         zoom: 16,
