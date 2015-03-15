@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var compression = require('compression');
 var validator = require('validator');
 var nodemailer = require('nodemailer');
+var q = require('q');
 
 var mailConfig = require('./data/smtp');
 var transport = nodemailer.createTransport(mailConfig);
@@ -36,7 +37,10 @@ app.post('/api/messages', function(req, res, next){
   var message = req.body.message;
 
   var tos = require('./data/mails');
+  var promises = [];
   tos.forEach(function(to){
+    var deferred = q.defer();
+    promises.push(deferred.promise);
     console.log('Envoi pour %s', to);
     transport.sendMail({
       to: to,
@@ -45,16 +49,20 @@ app.post('/api/messages', function(req, res, next){
       text: message
     }, function(err, response){
       if(err){
-        console.log('Erreur mail');
-        return next(err);
+        deferred.reject(err);
       }
       else {
-        res.status(200)
-        .json({
-          message: 'Message envoyé'
-        });
+        deferred.resolve(response);
       }
     });
+  });
+
+  q.all(promises)
+  .then(function(){
+    res.json({message: 'Message envoyé'});
+  })
+  .error(function(){
+    next(new Error('Mail non envoyé'));
   });
 });
 
