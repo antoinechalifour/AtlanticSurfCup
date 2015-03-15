@@ -18,6 +18,7 @@
       .success(function(data){
         $scope.messageInfos = {};
         $scope.state = 'success';
+        $scope.messageForm.$setPristine(true);
         clearState(3000);
       })
       .error(function(err){
