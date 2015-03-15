@@ -40,9 +40,12 @@
   color: #303f9f;
 }
 .subfooter {
-  padding: 15px;
-  background-color: #536DFE;
-  color: white;
+  background-color: #f4f4f4;
+  color: #333333;
+}
+.subfooter p {
+  padding: 40px 0;
+  margin: 0;
 }
 .navbar.navbar-default {
   color: white;

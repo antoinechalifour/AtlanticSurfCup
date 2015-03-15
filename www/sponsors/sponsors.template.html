@@ -2,10 +2,10 @@
   <div class="container">
     <h1 class="text-center">Ils supportent l'Atlantic Surf Cup : </h1>
     <div class="row">
-      <div ng-repeat="sp in sponsors" class="col-xs-12 col-sm-4 col-md-3">
+      <div ng-repeat="sp in sponsors" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
         <div class="panel shadow-2 wow fadeIn"  data-wow-delay="{{($index * 0.1) + 0.1}}s">
           <div class="panel-img">
-            <img class="img-responsive" ng-src="{{sp.logo}}">
+            <a target="_blank" ng-href="{{sp.url}}"><img class="img-responsive" ng-src="{{sp.logo}}"></a>
           </div>
           <div class="panel-body text-center">
             <h3>{{sp.name}}</h3>
