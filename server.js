@@ -61,7 +61,7 @@ app.post('/api/messages', function(req, res, next){
   .then(function(){
     res.json({message: 'Message envoyé'});
   })
-  .error(function(){
+  .catch(function(){
     next(new Error('Mail non envoyé'));
   });
 });
