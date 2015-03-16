@@ -20,7 +20,7 @@ module.exports = [{
     logo: 'assets/img/al/logo.png',
     description: 'Cours de surf, depuis <année>',
     img: '',
-    url: 'http://atlantic-lezard.com/'
+    url: 'http://lezardsurfschool.com/'
 }, {
     name: 'BNP Paribas',
     logo: 'assets/img/bnp/logo.png',

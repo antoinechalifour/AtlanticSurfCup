@@ -44,8 +44,7 @@
       'L\'ASC, ton meilleur pote.',
       'Et tu casses.',
       'J\'t\'ai cassé.',
-      'Pas de violence, c’est les vacances !',
-      'T\'es comme le « h » de hawaï, tu sers à rien.'
+      'Pas de violence, c’est les vacances !'
     ];
 
     var l = slogans.length;
