@@ -2,7 +2,7 @@
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var port = process.env.PORT = process.env.PORT || 8080;
 var client = 'www/';
-if(env === 'production') client = 'build/www/';
+if(env === 'production') client = 'build/';
 
 
 // Import des modules
@@ -101,5 +101,5 @@ app.use(function(err, req, res, next){
 var server = http.createServer(app);
 
 server.listen(port, function(){
-  console.log('Server listening on port %s', port);
+  console.log('Server listening on port %s in %s mode', port, env);
 })

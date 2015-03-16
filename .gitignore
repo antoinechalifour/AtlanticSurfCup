@@ -2,3 +2,5 @@ www/bower_components/
 _sauv/
 node_modules/
 data/smtp.js
+build/
+.tmp/
