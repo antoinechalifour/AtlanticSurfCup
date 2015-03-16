@@ -11,18 +11,18 @@
 // }
 module.exports = [{
     name: 'La Gachère',
-    logo: 'assets/img/gachere/logo.png',
+    logo: 'assets/img/gachere/logo.jpg',
     url: 'http://www.camping-gachere.com/'
 }, {
     name: 'Atlantic Lezard',
-    logo: 'assets/img/al/logo.png',
+    logo: 'assets/img/al/logo.jpg',
     url: 'http://lezardsurfschool.com/'
 }, {
     name: 'BNP Paribas',
-    logo: 'assets/img/bnp/logo.png',
+    logo: 'assets/img/bnp/logo.jpg',
     url: 'https://www.secure.bnpparibas.net/'
 }, {
     name: 'Red Bull',
-    logo: 'assets/img/rb/logo.png',
+    logo: 'assets/img/rb/logo.jpg',
     url: 'http://www.redbull.com/fr/fr'
 }];
