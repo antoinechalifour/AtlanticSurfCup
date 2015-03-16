@@ -6,7 +6,8 @@
   .directive('ascHome', function(){
     return {
       restrict: 'E',
-      templateUrl: 'home/home.template.html'
+      templateUrl: 'home/home.template.html',
+      controller: 'HomeCtrl'
     };
   });
 })();

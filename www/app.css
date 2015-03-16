@@ -144,7 +144,7 @@
 }
 .home h1,
 .home p {
-  font-family: 'Open Sans';
+  font-family: 'Raleway';
 }
 .home h1 {
   font-size: 44px;
@@ -192,7 +192,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto';
   font-size: 15px;
   line-height: 1.50;
   color: #333333;

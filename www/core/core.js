@@ -3,5 +3,5 @@
 
   angular.module('ASC.core', ['ui.bootstrap', 'duScroll'])
 
-  .value('duScrollOffset', 150);
+  .value('duScrollOffset', 125);
 })();
