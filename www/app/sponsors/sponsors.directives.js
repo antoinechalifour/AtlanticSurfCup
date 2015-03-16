@@ -6,7 +6,7 @@
   .directive('ascSponsors', function(){
     return {
       restrict: 'E',
-      templateUrl: 'sponsors/sponsors.template.html',
+      templateUrl: 'app/sponsors/sponsors.template.html',
       controller: 'AscSponsorsCtrl'
     };
   })

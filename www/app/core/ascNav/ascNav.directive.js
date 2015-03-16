@@ -6,7 +6,7 @@
   .directive('ascNav', ['$window', function($window){
     return {
       restrict: 'E',
-      templateUrl: 'core/ascNav/ascNav.template.html',
+      templateUrl: 'app/core/ascNav/ascNav.template.html',
       controller: 'AscNavCtrl',
       link: function(scope, element, attrs){
         var header = element.children(0);

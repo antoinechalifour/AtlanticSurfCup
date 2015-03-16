@@ -9,7 +9,7 @@
       scope: {
         backgroundUrl: '='
       },
-      templateUrl: 'core/ascSeparator/ascSeparator.template.html'
+      templateUrl: 'app/core/ascSeparator/ascSeparator.template.html'
     };
   });
 })();

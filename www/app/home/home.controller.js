@@ -5,9 +5,9 @@
 
   .controller('HomeCtrl', ['$scope', function($scope){
     var banners = [
-      'home/img/banner.jpg',
-      'home/img/banner2.jpg',
-      'home/img/banner4.jpg'
+      '/assets/img/banner.jpg',
+      '/assets/img/banner2.jpg',
+      '/assets/img/banner4.jpg'
     ];
 
     var l = banners.length;

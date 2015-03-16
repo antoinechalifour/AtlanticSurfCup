@@ -5,7 +5,7 @@ module.exports = function(grunt){
     watch: {
       less: {
         files: [
-          'www/**/*.less'
+          'www/app/**/*.less'
         ],
         tasks: ['less:all']
       }
@@ -13,10 +13,10 @@ module.exports = function(grunt){
     less: {
       all: {
         options: {
-          paths: ['www/']
+          paths: ['www/app']
         },
         files: {
-          'www/app.css': 'www/app.less'
+          'www/app/app.css': 'www/app/app.less'
         }
       }
     }

@@ -6,7 +6,7 @@
   .directive('ascHome', function(){
     return {
       restrict: 'E',
-      templateUrl: 'home/home.template.html',
+      templateUrl: 'app/home/home.template.html',
       controller: 'HomeCtrl'
     };
   });

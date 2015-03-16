@@ -6,7 +6,7 @@
   .directive('ascFooter', function(){
     return {
       restrict: 'E',
-      templateUrl: 'core/ascFooter/ascFooter.template.html',
+      templateUrl: 'app/core/ascFooter/ascFooter.template.html',
       controller: 'AscFooterCtrl'
     };
   })

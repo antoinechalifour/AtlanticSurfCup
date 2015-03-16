@@ -17,14 +17,25 @@
     };
   }])
 
-  .directive('backstretch', function () {
+  .directive('backstretch', ['$parse', function ($parse) {
     return {
       restrict: 'A',
       link: function (scope, element, attrs) {
-        $(element).backstretch(attrs.backgroundUrl);
+        var img = attrs.backgroundUrl;
+        var imgs = attrs.backgroundUrls;
+        if(img){
+          $(element).backstretch(attrs.backgroundUrl);
+        }
+        else if(imgs){
+          imgs = $parse(imgs)(scope);
+          console.log(imgs);
+          var duration = attrs.duration || 10000;
+          var fade = attrs.fade || 750;
+          $(element).backstretch(imgs, {duration: duration, fade: fade});
+        }
       }
     };
-  })
+  }])
 
   .directive('fadeScroll', ['$window', function($window){
     return function(scope, element, attrs){

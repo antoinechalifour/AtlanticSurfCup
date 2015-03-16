@@ -11,25 +11,25 @@
 // }
 module.exports = [{
     name: 'La Gachère',
-    logo: 'sponsors/img/gachere/logo.png',
+    logo: 'assets/img/gachere/logo.png',
     description: 'Hôtes depuis <année>.',
     img: '',
     url: 'http://www.camping-gachere.com/'
 }, {
     name: 'Atlantic Lezard',
-    logo: 'sponsors/img/al/logo.png',
+    logo: 'assets/img/al/logo.png',
     description: 'Cours de surf, depuis <année>',
     img: '',
     url: 'http://atlantic-lezard.com/'
 }, {
     name: 'BNP Paribas',
-    logo: 'sponsors/img/bnp/logo.png',
+    logo: 'assets/img/bnp/logo.png',
     description: 'Partenaires depuis <année>',
     img: '',
     url: 'https://www.secure.bnpparibas.net/'
 }, {
     name: 'Red Bull',
-    logo: 'sponsors/img/rb/logo.png',
+    logo: 'assets/img/rb/logo.png',
     description: 'Partenaires depuis <année>',
     img: '',
     url: 'http://www.redbull.com/fr/fr'
