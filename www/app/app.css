@@ -182,11 +182,22 @@
 .sponsor a {
   text-decoration: none;
 }
+.sponsor .panel {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .sponsor .panel .panel-body h3 {
   margin-bottom: 3px;
 }
 .sponsor .panel .panel-img {
   background-color: #212121;
+}
+.sponsor .panel:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
 }
 /*
 Eléments généraux
