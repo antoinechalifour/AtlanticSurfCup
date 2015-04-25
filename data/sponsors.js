@@ -25,4 +25,8 @@ module.exports = [{
     name: 'Red Bull',
     logo: 'assets/img/rb/logo.jpg',
     url: 'http://www.redbull.com/fr/fr'
+}, {
+    name: 'Forum Atlantique',
+    logo: 'assets/img/fa/logo.jpg',
+    url: 'http://www.forumatlantique.fr/'
 }];
